@@ -1,0 +1,69 @@
+:root { /*é usado para definir variáveis CSS GLOBAIS, melhorando a organização, manutenção e consistência dos estilos no projeto*/
+    -cor-roxa: #935266;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Ocupa 100% da altura da janela*/
+    margin: 0; /*Remove margens padrão do body*/
+}
+
+main {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    justify-content: center;
+    border: solid 1px #935266;
+    padding-block: 50px;
+    border-radius: 5px;
+}
+
+.caixa-sugestoes >div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+button {
+    background-color: var(--cor-roxa);
+}
+
+.caixa-sugestoes {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #935266;
+}
+
+.caixa-sugestoes h1 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.caixa-sugestoes input { /*Estiliza o campo de entrada (Input) dentro desse elemento, ajustando o tamanho e o espaçamento desse campo.*/
+    width: 500px;
+    height: 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.caixa-sugestoes button {
+    background-color: #935266;
+    color: white;
+    border: 1,5px solid black; /*Define que haverá borda no botão bem como sua expessura e coloração. */
+    border-radius: 5px; /*Deix o botão arredondado.*/
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.caixa-sugestoes input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #935266;
+}
